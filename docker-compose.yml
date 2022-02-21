@@ -1,0 +1,10 @@
+version: "3"
+services: 
+  jupyter-workspace:
+    build: .
+    tty: true 
+    volumes: 
+      - .:/src
+    ports: 
+      - 8000:8000
+      - 8080:8080
